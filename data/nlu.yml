@@ -1,0 +1,61 @@
+nlu:
+- intent: greet
+  examples: |
+    - halo
+    - hi
+    - pagi
+    - siang
+    - hello
+    - sore
+    - malam
+
+- intent: goodbye
+  examples: |
+    - dada
+    - bye
+    - bye bye
+
+- intent: thank
+  examples: |
+    - thanks
+    - makasih
+    - terima kasih
+    - thank you
+
+- intent: affirm
+  examples: |
+    - yes
+    - ya
+    - iya
+    - bener
+    - betul
+    - benar
+
+- intent: deny
+  examples: |
+    - nggak
+    - ga
+    - engga
+    - kagak
+    - tidak
+    - no
+
+- intent: ask_general
+  examples: |
+    - apa itu [mental health](mental)?
+    - kenapa orang bisa kena [penyakit mental](mental)?
+    - apa penyebab [mental illness](mental)?
+    - siapa saja yang bisa terkena [mental illness](mental)?
+    
+- intent: ask_doctor
+  examples: |
+    - gimana cara mencari [dokter] (doctor) kesehatan mental?
+
+- intent: ask_medicine
+    - apakah ada [obat] (medicine) untuk mental illness?
+    - di mana beli [obat] (medicine) untuk mental health?
+
+- intent: ask_macha
+  examples: |
+    - kamu siapa?
+    - siapa kamu?

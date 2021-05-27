@@ -1,0 +1,83 @@
+stories:
+
+- story: ask macha path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_macha
+  - action: utter_iamabot
+
+- story: ask 1_general
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_general
+  - action: utter_answer_general
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask 1_doctor
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_doctor
+  - action: utter_answer_doctor
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask 1_medicine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_medicine
+  - action: utter_answer_medicine
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_general
+  - action: utter_answer_general
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: ask_doctor
+  - action: utter_answer_doctor
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_general
+  - action: utter_answer_general
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: ask_doctor
+  - action: utter_answer_doctor
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: ask_medicine
+  - action: utter_answer_medicine
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_response_thank
+  - intent: deny
+  - action: utter_goodbye
