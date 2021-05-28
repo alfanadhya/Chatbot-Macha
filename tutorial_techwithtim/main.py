@@ -32,11 +32,18 @@ except:
         if intent["tag"] not in labels:
             labels.append(intent["tag"])
 
+    # Word Stemming - to reduce the vocabulary of our model
     words = [stemmer.stem(w.lower()) for w in words if w != "?"]
     words = sorted(list(set(words)))
 
     labels = sorted(labels)
 
+    # Bag of Words
+    '''
+    Represent each sentence with a list the length of the amount of words in our models vocabulary.
+    If the position in the list is a 1 then that will mean that the word exists in our sentence.
+    If it is a 0 then the word is nor present.
+    '''
     training = []
     output = []
 
@@ -59,13 +66,14 @@ except:
         training.append(bag)
         output.append(output_row)
 
-
+    # Convert training data and output to numpy arrays
     training = numpy.array(training)
     output = numpy.array(output)
 
     with open("data.pickle", "wb") as f:
         pickle.dump((words, labels, training, output), f)
 
+# Architecture of our model
 ops.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
@@ -76,12 +84,14 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
+# Training & Saving the Model
 try:
     model.load("model.tflearn")
 except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
+# Making Predictions
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
