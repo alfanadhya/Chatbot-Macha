@@ -14,7 +14,7 @@ with open("intents.json") as file:
     data = json.load(file)
 
 try:
-    with open("data.pickle", "rb") as f:
+    with open("data.pkl", "rb") as f:
         words, labels, training, output = joblib.load(f)
 except:
     words = []
@@ -63,7 +63,7 @@ except:
     training = numpy.array(training)
     output = numpy.array(output)
 
-    with open("data.pickle", "wb") as f:
+    with open("data.pkl", "wb") as f:
         joblib.dump((words, labels, training, output), f)
 
 ops.reset_default_graph()
