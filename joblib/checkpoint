@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/alfa/rasa_try/joblib/model.tflearn"
+all_model_checkpoint_paths: "/home/alfa/rasa_try/joblib/model.tflearn"
