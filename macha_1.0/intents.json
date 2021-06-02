@@ -50,7 +50,7 @@
         },
         {
             "tag": "ask_help_other_depression",
-            "patterns": ["Seseorang yang saya cintai telah didiagnosis dengan depresi. Bagaimana saya bisa membantu?"],
+            "patterns": ["Seseorang yang saya cintai atau teman telah didiagnosis dengan depresi. Bagaimana saya bisa membantu?"],
             "responses": ["Anda tidak harus memahami dengan tepat apa yang dialami orang lain, Anda hanya perlu menyadari bahwa itu adalah pengalaman yang sulit. Anda dapat mencoba sesuatu seperti, 'Saya dapat melihat bahwa pengalaman ini atau gejala-gejala ini benar-benar menyakitkan bagi Anda,' atau, 'Saya ikut sedih mendengar bahwa Anda merasa tidak sehat.' Jika Anda sendiri pernah mengalami depresi, Anda dapat mengatakan, 'Saya tahu bagaimana perasaan Anda.' Ingatlah bahwa setiap orang mengalami penyakit seperti depresi secara berbeda, dan empati adalah tentang mengenali dampak penyakitnya, bukan membandingkan gejalanya. Anda tidak harus menjadi ahli, tetapi mempelajari lebih lanjut tentang depresi dapat membantu Anda memahami apa yang sedang terjadi (dan mungkin menghilangkan beberapa mitos yang tidak membantu seputar depresi)."]
         },
         {
@@ -77,6 +77,36 @@
             "tag": "ask_online_counseling",
             "patterns": ["Minta daftar penyedia layanan konseling kesehatan mental secara online dong?"],
             "responses": ["Berikut ini beberapa aplikasi atau situs yang menyediakan layanan konseling profesional kesehatan jiwa secara online: Getbetter.id, Riliv, Kalm, Klee, Kariib"]
+        },
+        {
+            "tag": "ask_suicide_sign",
+            "patterns": ["Apa tanda-tanda bunuh diri?", "Apa ciri orang yang ingin bunuh diri atau suicide?"],
+            "responses": ["Beberapa tanda-tandanya adalah : Membicarakan keinginan bunuh diri, Membenci dan menghujat diri sendiri, Mencari cara mematikan untuk bunuh diri, Mengatur segala hal untuk ditinggalkan, Mengucapkan perpisahan, Menarik diri dari orang lain, Perilaku merusak diri sendiri, Perubahan fisik dan mood yang drastis. Jika orang terdekat kamu menunjukkan salah satu atau beberapa tanda-tanda peringatan bunuh diri di atas, jangan ragu untuk tanyakan dan tawarkan bantuan. Tunjukkan bahwa kamu khawatir dan peduli dengan kondisi mereka, dan ajaklah mereka untuk membicarakan dengan baik-baik."]
+        },
+        {
+            "tag": "ask_suicide_online",
+            "patterns": ["Bagaimana jika saya menemukan orang yang ingin bunuh diri di internet?"],
+            "responses": ["Jika kamu bisa menjangkau mereka, jangan ragu untuk menghubungi mereka melalui balasan di status/cuitan mereka atau pesan pribadi. Tawarkan bantuan semampumu dan berikan tautan menuju informasi pertolongan pertama. Carilah orang-orang yang mereka kenal dekat atau dapat menjangkau lebih dekat, dan ajak mereka untuk melakukan pendekatan dengan orang tersebut. Cara lain yang dapat kamu lakukan adalah dengan fitur lapor di media sosial, terutama jika mereka menunjukkan bahwa mereka melukai diri sendiri atau menunjukkan alat/cara untuk bunuh diri. Kebanyakan media sosial akan memproses laporan dengan memberikan daftar kontak atau tautan yang mereka bisa akses sebagai pertolongan pertama. Harap dicatat bahwa apapun bantuan atau upaya yang kamu kerahkan, kamu tidak dapat bertanggung jawab atas tindakan dan perilaku orang lain."]
+        },
+        {
+            "tag": "ask_refuse_our_help",
+            "patterns": ["Bagaimana jika teman menolak bantuan saya?"],
+            "responses": ["Hargailah keputusan mereka. Kamu bisa mengatakan 'Tidak apa-apa, tetapi jika kamu suatu saat membutuhkan bantuan, kamu bisa menghubungi aku kembali atau siapa saja yang kamu percaya.'"]
+        },
+        {
+            "tag": "ask_suicide_survivor",
+            "patterns": ["Saya Berduka dan sedih karena Kehilangan Orang Terkasih atau teman yang Bunuh Diri"],
+            "responses": ["Merupakan hal yang sangat wajar untuk memberikan waktu bagi dirimu sendiri dan “meninggalkan” sementara rasa sakit yang dirimu rasakan dengan melakukan sesuatu yang kamu sukai, meskipun kamu merasa sedang tidak ingin melakukannya pada saat itu. Temukan hal-hal yang bisa membuatmu terdistraksi agar dapat memberikan waktu sejenak untuk keluar dari rasa sakit. Apabila kamu masih membutuhkan waktu sendiri, kamu berhak untuk menyeleksi atau memilih siapa saja yang ingin kamu ajak bicara dan siapa yang tidak. Buat jurnal untuk mencatat pikiran dan perasaanmu. Teruslah terhubung dengan orang lain. Temukan support group bagi penyintas kehilangan bunuh diri."]
+        },
+        {
+            "tag": "ask_back_stronger",
+            "patterns": ["Bagaimana cara saya untuk dapat pulih dari kedukaan yang saya alami?", "Gimana biar ga sedih lagi?"],
+            "responses": ["Penting bagi diri kita untuk tidak memasang harapan yang terlalu tinggi atau bahkan memaksa diri kita sendiri untuk merasa lebih baik pada tahapan-tahapan awal dari kedukaan. Beberapa hal yang perlu kamu ingat: Tidak ada cara yang benar maupun salah di dalam menjalani proses kedukaan kita. Tidak ada suatu “batasan” atau “jangka waktu” yang pasti mengenai proses kedukaan itu sendiri – biarkanlah proses yang kita rasakan mengalir saja. Berikanlah dirimu dan orang lain waktu dan kesempatan untuk berduka. Jangan takut untuk meminta bantuan kalau kamu merasa dirimu tidak dapat menghadapi proses berduka ini dengan baik."]
+        },
+        {
+            "tag": "ask_feel_worthless",
+            "patterns": ["Aku ngerasa nggak berharga", "Aku ngerasa ga ada gunanya hidup di dunia", "Aku ga punya alasan hidup lagi"],
+            "responses": ["Perasaan yang buruk adalah bagian dari hidup. Terkadang, mereka adalah motivasi untuk melepaskan diri kita dari situasi dan hubungan yang lebih merugikan. Perasaan buruk memang terasa mengerikan. Perasaan tidak berharga mungkin baik dalam arti memotivasi untuk mengetahui bahwa kamu jauh lebih baik daripada perasaan kamu hari ini. Jika semua orang berpikir Anda tidak berharga, maka mungkin kamu bisa mencoba untuk mencari orang baru untuk bergaul. Kamu bisa berputar-putar mencoba memahami mengapa kamu tidak berharga, lalu kembali ke lingkungan pertemanan awalmu dan mulai lagi."]
         }
     ]
 }
