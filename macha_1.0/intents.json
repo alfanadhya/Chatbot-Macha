@@ -75,12 +75,12 @@
         },
         {
             "tag": "ask_online_counseling",
-            "patterns": ["Minta daftar penyedia layanan konseling kesehatan mental secara online dong?"],
+            "patterns": ["Minta daftar atau info penyedia layanan konseling kesehatan mental secara online dong?", "Minta info atau informasi konseling online dong?"],
             "responses": ["Berikut ini beberapa aplikasi atau situs yang menyediakan layanan konseling profesional kesehatan jiwa secara online: Getbetter.id, Riliv, Kalm, Klee, Kariib"]
         },
         {
             "tag": "ask_suicide_sign",
-            "patterns": ["Apa tanda-tanda bunuh diri?", "Apa ciri orang yang ingin bunuh diri atau suicide?"],
+            "patterns": ["Apa tanda orang yang pengen bunuh diri?", "Apa ciri orang yang ingin bunuh diri atau suicide?"],
             "responses": ["Beberapa tanda-tandanya adalah : Membicarakan keinginan bunuh diri, Membenci dan menghujat diri sendiri, Mencari cara mematikan untuk bunuh diri, Mengatur segala hal untuk ditinggalkan, Mengucapkan perpisahan, Menarik diri dari orang lain, Perilaku merusak diri sendiri, Perubahan fisik dan mood yang drastis. Jika orang terdekat kamu menunjukkan salah satu atau beberapa tanda-tanda peringatan bunuh diri di atas, jangan ragu untuk tanyakan dan tawarkan bantuan. Tunjukkan bahwa kamu khawatir dan peduli dengan kondisi mereka, dan ajaklah mereka untuk membicarakan dengan baik-baik."]
         },
         {

@@ -123,6 +123,6 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
 # fit and save the model
-history = model.fit(np.array(train_x), np.array(train_y), epochs=400, batch_size=8, verbose=1)
+history = model.fit(np.array(train_x), np.array(train_y), epochs=1000, batch_size=8, verbose=1)
 model.save("macha_chatbot_model.h5", history)
 print("model created")
