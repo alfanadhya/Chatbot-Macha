@@ -17,8 +17,16 @@
         },
         {
             "tag": "ask_general",
-            "patterns": ["Apa itu mental illness?", "Apa penyebab mental illness", "Kenapa orang bisa kena penyakit mental?"],
-            "responses": ["Mental illness adalah istilah yang mengacu pada berbagai kondisi yang memengaruhi pemikiran, perasaan, suasana hati, atau perilaku seseorang. Kondisi ini bisa terjadi hanya sesekali atau berlangsung dalam waktu yang lama."]
+            "patterns": ["Apa itu mental illness?", "Apa itu penyakit mental?", "Apa definisi mental illness?"],
+            "responses": [
+                "Penyakit mental adalah kondisi kesehatan yang mengganggu pikiran, emosi, hubungan, dan fungsi sehari-hari seseorang. Mereka terkait dengan kesusahan dan berkurangnya kapasitas untuk terlibat dalam aktivitas sehari-hari. Penting untuk diketahui bahwa penyakit mental adalah kondisi medis yang tidak ada hubungannya dengan karakter, kecerdasan, atau kemauan seseorang. Sama seperti diabetes adalah gangguan pankreas, penyakit mental adalah kondisi medis karena biologi otak.",
+                "Penyakit mental adalah kondisi kesehatan yang mengganggu pikiran, emosi, hubungan, dan fungsi sehari-hari seseorang. Penyakit mental termasuk dalam rangkaian keparahan: beberapa cukup ringan dan hanya mengganggu beberapa aspek kehidupan, seperti fobia tertentu. Sama halnya dengan bagaimana seseorang akan mengobati diabetes dengan obat-obatan dan insulin, penyakit mental dapat diobati dengan kombinasi obat-obatan dan dukungan sosial."
+            ]
+        },
+        {
+            "tag": "ask_cause",
+            "patterns": ["Apa penyebab mental illness", "Kenapa orang bisa kena penyakit mental?"],
+            "responses": ["Penyakit mental biasanya menyerang individu di puncak kehidupan, dengan 75 persen kondisi kesehatan mental berkembang pada usia 24 tahun. Hal ini membuat identifikasi dan pengobatan gangguan mental sangat sulit, karena kepribadian normal dan perubahan perilaku remaja dapat menutupi gejala gangguan kesehatan jiwa. Orang tua dan pengasuh harus menyadari fakta ini, dan memperhatikan perubahan suasana hati, kepribadian, kebiasaan pribadi, dan penarikan sosial anak mereka. Ketika ini terjadi pada anak-anak di bawah 18 tahun, mereka disebut sebagai serious emotional disturbances (SEDs)."]
         },
         {
             "tag": "ask_doctor",
@@ -34,6 +42,41 @@
             "tag": "ask_macha",
             "patterns": ["Kamu siapa?", "Siapa kamu?"],
             "responses": ["Aku Macha, teman yang akan membantumu :)"]
+        },
+        {
+            "tag": "missed",
+            "patterns": ["Jawaban kamu ngaco", "Ah nggak nyambung jawabnya"],
+            "responses": ["Maaf Macha masih terus belajar, semoga pertanyaanmu selanjutnya terjawab ya.."]
+        },
+        {
+            "tag": "ask_help_other_depression",
+            "patterns": ["Seseorang yang saya cintai telah didiagnosis dengan depresi. Bagaimana saya bisa membantu?"],
+            "responses": ["Anda tidak harus memahami dengan tepat apa yang dialami orang lain, Anda hanya perlu menyadari bahwa itu adalah pengalaman yang sulit. Anda dapat mencoba sesuatu seperti, 'Saya dapat melihat bahwa pengalaman ini atau gejala-gejala ini benar-benar menyakitkan bagi Anda,' atau, 'Saya ikut sedih mendengar bahwa Anda merasa tidak sehat.' Jika Anda sendiri pernah mengalami depresi, Anda dapat mengatakan, 'Saya tahu bagaimana perasaan Anda.' Ingatlah bahwa setiap orang mengalami penyakit seperti depresi secara berbeda, dan empati adalah tentang mengenali dampak penyakitnya, bukan membandingkan gejalanya. Anda tidak harus menjadi ahli, tetapi mempelajari lebih lanjut tentang depresi dapat membantu Anda memahami apa yang sedang terjadi (dan mungkin menghilangkan beberapa mitos yang tidak membantu seputar depresi)."]
+        },
+        {
+            "tag": "ask_suicide",
+            "patterns": ["Aku lagi ngalamin suicidal thoughts", "Aku pengen bunuh diri", "Temenku ada yang ingin bunuh diri", "Saya memiliki pikiran untuk bunuh diri, atau seseorang yang saya sayangi membahas tentang bunuh diri. Apa yang harus saya lakukan?"],
+            "responses": ["Pikiran untuk bunuh diri tidak berarti bahwa seseorang akan mengakhiri hidupnya, tetapi itu adalah tanda bahwa mereka membutuhkan bantuan atau dukungan ekstra. Jika Anda memiliki pikiran untuk bunuh diri, penting untuk berbicara dengan dokter atau penyedia layanan kesehatan mental Anda. Jika Anda mendukung orang lain, dorong mereka untuk mencari bantuan. Mengatasi Pikiran Bunuh Diri adalah sumber yang bagus untuk membantu Anda memahami dan mengelola perasaan yang sulit. Telepon Direktorat Bina Pelayanan Kesehatan Jiwa Kementerian Kesehatan Republik Indonesia: 500-454"]
+        },
+        {
+            "tag": "ask_free_counseling",
+            "patterns": ["Di mana saya dapat menemukan konseling gratis atau berbiaya rendah?", "Di mana bisa cari konseling murah atau gratis?"],
+            "responses": ["Bagi penerima layanan BPJS, disarankan untuk mencari layanan dari Puskesmas terdekat terlebih dahulu sekalipun Puskesmas tidak memiliki layanan kesehatan jiwa, karena pasien penerima layanan kesehatan jiwa dari BPJS membutuhkan rujukan dari Puskesmas sebelum dapat dirujuk ke rumah sakit. Jika Anda tidak berniat menggunakan layanan BPJS, Anda bisa langsung ke rumah sakit terdekat. Kamu juga bisa ikut layanan konseling sebaya seperti di www.ibunda.id"]
+        },
+        {
+            "tag": "ask_self_harm",
+            "patterns": ["Saya berpikir untuk melukai diri sendiri atau self harm"],
+            "responses": ["Ketika kamu merasa cemas, marah, atau kecewa, lakukanlah hal-hal yang kamu suka atau cobalah untuk berpikir mengenai hal lain yang dapat menjadi distraksi atau cara pengganti agar kamu berhenti melukai diri sendiri. Cobalah hal-hal berikut: Menghubungi teman, Mencatat perasaan kamu dalam satu buku harian, Mendengarkan musik, menggambar, atau membaca, Berjalan santai atau berlari, berdansa, berolahraga atau beraktivitas fisik, Menghitung mundur dan perlahan-lahan dari 10 ke 1, Bernapas perlahan-lahan, menarik napas melalui hidung dan melepaskan melalui mulut, Berfokus pada benda-benda di sekitarmu dan pikirkan bagaimana bentuk, suara, wangi, atau rasanya"]
+        },
+        {
+            "tag": "ask_counseling_price",
+            "patterns": ["Berapa harga layanan konseling online?"],
+            "responses": ["Harga layanan konsultasi online dapat berbeda-beda, umumnya mulai dari Rp100.000,- per sesi. Silakan tanyakan mengenai harga masing-masing penyedia layanan."]
+        },
+        {
+            "tag": "ask_online_counseling",
+            "patterns": ["Minta daftar penyedia layanan konseling kesehatan mental secara online dong?"],
+            "responses": ["Berikut ini beberapa aplikasi atau situs yang menyediakan layanan konseling profesional kesehatan jiwa secara online: Getbetter.id, Riliv, Kalm, Klee, Kariib"]
         }
     ]
 }
