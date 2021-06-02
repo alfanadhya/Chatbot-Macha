@@ -5,17 +5,17 @@ from tensorflow import keras
 from flask import Flask, request
 
 ###
-import nltk
-from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
-import random
-import numpy
+# import nltk
+# from nltk.stem.lancaster import LancasterStemmer
+# stemmer = LancasterStemmer()
+# import random
+# import numpy
 ###
 
 app = Flask(__name__)
 
 # model= joblib.load("model.joblib")
-model = keras.models.load_model('model')
+model = keras.models.load_model('model.h5')
 model.load_weights("weights.h5")
 
 @app.route("/")

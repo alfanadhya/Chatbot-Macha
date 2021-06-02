@@ -6,7 +6,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-model= joblib.load("data.pkl")
+model= joblib.load("data.pickle")
 
 @app.route("/")
 def hello_world():

@@ -75,12 +75,12 @@ model.add(tf.keras.layers.Dense(8,))
 model.add(tf.keras.layers.Dense(len(output[0]), activation="softmax"))
 
 try:
-    keras.models.load_model("model")
+    keras.models.load_model("model.h5")
 except:
     model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
     model.fit(training, output, epochs=1000, batch_size=8)
 
-    model.save("model")
+    model.save("model.h5")
     model.save_weights("weights.h5")
 
 #####
@@ -99,63 +99,21 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 
-# def chat():
-#     print("Start talking with the bot (type quit to stop)!")
-#     while True:
-#         inp = input("You: ")
-#         if inp.lower() == "quit":
-#             break
+def chat():
+    print("Start talking with the bot (type quit to stop)!")
+    while True:
+        inp = input("You: ")
+        if inp.lower() == "quit":
+            break
 
-#         results = model.predict([[bag_of_words(inp, words)]])
-#         results_index = numpy.argmax(results)
-#         tag = labels[results_index]
+        results = model.predict([[bag_of_words(inp, words)]])
+        results_index = numpy.argmax(results)
+        tag = labels[results_index]
 
-#         for tg in data["intents"]:
-#             if tg['tag'] == tag:
-#                 responses = tg['responses']
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
 
-#         print(random.choice(responses))
+        print(random.choice(responses))
 
-# chat()
-
-# import tflearn
-# import json
-# # import joblib
-# from tensorflow import keras
-from flask import Flask, request
-
-###
-# import nltk
-# from nltk.stem.lancaster import LancasterStemmer
-# stemmer = LancasterStemmer()
-# import random
-# import numpy
-###
-
-app = Flask(__name__)
-
-# model= joblib.load("model.joblib")
-model = keras.models.load_model('model')
-model.load_weights("weights.h5")
-
-@app.route("/")
-def hello_world():
-    return "hello world!"
-
-@app.route("/predict", methods=["POST"])
-def predict():
-    request_json = request.json
-    print("data: {}".format(request_json))
-    print("type: {}".format(type(request_json)))
-
-    prediction = model.predict([[bag_of_words(request_json.get('data'), words)]])
-    prediction_string = [str(d) for d in prediction]
-    response_json = {
-    "data" : request_json.get("data"),
-    "prediction" : list(prediction_string)
-    }
-
-    return json.dumps(response_json)
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+chat()
