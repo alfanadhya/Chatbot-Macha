@@ -1,5 +1,5 @@
 # Chatbot-Macha
-Just an experiment to build a chatbot about mental health in Bahasa Indonesia
+Just an experiment to build a chatbot in Bahasa Indonesia for mental health QnA
 
 Dataset source:
 1) https://www.kaggle.com/narendrageek/mental-health-faq-for-chatbot?select=Mental_Health_FAQ.csv
